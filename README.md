@@ -12,5 +12,33 @@ Conclusions: The 23 gene-based PI is a promising diagnostic tool for identifying
 
 The codes in the Python language that describe the training and validation procedures of the prediction model based on FNN algorithm are available in this repository. The entire procedure is described in the Python language and provided as a Jupyter notebook script named DPPN.ipynb.
 
+<img src="./.img/Figure.png" width="800" height="604">
 
-<pre><code>$> conda install numpy pandas matplotlib</code></pre>
+<b>Figure</b>: Prognostic gene set and progression-free survival (PFS) of two patient clusters (Low-Risk Cluster [LRC] or High-Risk Cluster [HRC]) in non-muscle-invasive bladder cancer (NMIBC). (A) Training and validation strategy for the prediction model based on 1,789 genes. (B) Kaplan-Meier curves show a significantly higher progression rate in HRC patients compared to LRC patients (log-rank test, p<0.001). (C) Kaplan-Meier plots of NMIBC patient progression from the test set, predicted by a fully connected neural network (FNN) algorithm. CBNUH: Chungbuk National University Hospital.
+
+## Descriptions of files in the repository
+* <b>DPPN.ipynb</b>: The script containing training and validation procedures can be loaded in the Jupyter notebook environment.
+* <b>gex.q_norm.g1789.overlapped_g1205.T.txt</b>: An example of preprocessed gene expression data contains data from the CBNUH cohort (n=103) and the UROMOL cohort (n=476). The data was processed, including expression profiles of 1,789 prognostic genes extracted from the training data.
+* <b>PFS_data.TEST_SET.txt</b>: An example of survival status in the test dataset. 
+
+## How to use
+To use the code provided in this repository, you should first construct and activate a Conda virtual environment to execute the script.
+<pre><code>$> conda create -n [your_vitural_envriment_name]
+$> conda activate [your_vitural_envriment_name]
+</code></pre>
+
+After activating your virtual environment, you need to install several packages using conda or pip as described below:
+
+<pre><code>$> conda install numpy pandas matplotlib
+$> conda install jupyter notebook
+$> conda install scikit-learn
+$> pip install keras
+$> pip install tensorflow
+$> pip install sklearn lifelines
+</code></pre>
+
+After installing the packages described above, you can confirm their status using the following command:
+
+<pre><code>$> conda list</code></pre>
+
+Now, You can import all the meterials in the repository, then execute the script, DPPN.ipynb. Please follow the step-by-step guides as describe in DPPN.ipynb.
