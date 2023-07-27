@@ -41,4 +41,4 @@ After installing the packages described above, you can confirm their status usin
 
 <pre><code>$> conda list</code></pre>
 
-Now, You can import all the meterials in the repository, then execute the script, DPPN.ipynb. Please follow the step-by-step guides as describe in DPPN.ipynb.
+Now, you can import all the materials in the repository and execute the script, DPPN.ipynb. Please follow the step-by-step guides as described in DPPN.ipynb.
