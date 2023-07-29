@@ -41,4 +41,8 @@ After installing the packages described above, you can confirm their status usin
 
 <pre><code>$> conda list</code></pre>
 
+Then, you can execute jupyer notebook to use the script in this reposotory:
+
+<pre><code>$> jupyter notebook</code></pre>
+
 Now, you can import all the materials in the repository and execute the script, DPPN.ipynb. Please follow the step-by-step guides as described in DPPN.ipynb.
